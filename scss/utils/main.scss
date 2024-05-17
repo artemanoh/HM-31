@@ -1,0 +1,46 @@
+@import "./sections/classes";
+@import "./sections/command";
+@import "./sections/customers";
+@import "./sections/footer";
+@import "./sections/header";
+@import "./sections/hero";
+@import "./sections/classes";
+@import "./base/common";
+@import "./base/reset";
+@import "./sections/backdrop";
+@import "./sections/details";
+@import "./sections/main-section";
+
+:root {
+  --commandtext: #757575;
+  --feauturesmain: #212121;
+  --Whatdo: #fff;
+  --background: #2f303a;
+  --whathbt: white;
+  --whathbtbg: #2196f3;
+  --commandbg: #f5f4fa;
+  --headermail: #757575;
+  --header-color: #ececec;
+  --footermail: rgba(255, 255, 255, 0.6);
+  --iconcolor: #AFB1B8
+}
+
+.container{
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  }
+  
+  section{
+  }
+  
+
+  .body {
+    font-family: Roboto;
+  position: relative;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+  
