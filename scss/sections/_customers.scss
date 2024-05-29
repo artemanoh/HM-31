@@ -1,52 +1,52 @@
 .costumers{
-    background-color: #AFB1B8;
-    }
-    
-    .customers-text{
-      color: #212121;
-    text-align: center;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 1.08px;
-    padding-top: 94px;
-    margin-bottom: 50px;
-    }
-    
-    
-    .customers-list {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    padding-bottom: 94px;
-    }
-    
-    
-    .customers-list-item {
-      padding: 16px 32px;
-      border-radius: 4px;
-    border: 1px solid #AFB1B8;
-    transition-duration: 250ms;
-  transition-property: border;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    
-    
-    .costumers-icons {
-    fill: var(--iconcolor);
-    width: 106px;
-    height: 60px;
-    transition-duration: 250ms;
-  transition-property: fill;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
+  background-color: #AFB1B8;
+  }
   
-    
-    
-    .customers-list-item:hover > .costumers-icons {
-      fill: var(--whathbtbg);
-    }
-    .customers-list-item:hover {
-      border: 1px solid var(--whathbtbg);
-    }
+  .customers-text{
+    color: #212121;
+  text-align: center;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.08px;
+  padding-top: 94px;
+  margin-bottom: 50px;
+  }
+  
+  
+  .customers-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding-bottom: 94px;
+  }
+  
+  
+  .customers-list-item {
+    padding: 16px 32px;
+    border-radius: 4px;
+  border: 1px solid #AFB1B8;
+  transition-duration: 250ms;
+transition-property: border;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  
+  .costumers-icons {
+  fill: var(--iconcolor);
+  width: 106px;
+  height: 60px;
+  transition-duration: 250ms;
+transition-property: fill;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  
+  
+  .customers-list-item:hover > .costumers-icons {
+    fill: var(--whathbtbg);
+  }
+  .customers-list-item:hover {
+    border: 1px solid var(--whathbtbg);
+  }

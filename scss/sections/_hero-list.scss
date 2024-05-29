@@ -1,68 +1,67 @@
 .hero-list {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    gap: 27px;
-  
-  }
-  
-  .hero-list-item { 
-    flex-basis: calc((100% - 60px) / 3);
-  }
-  
-  .hero-list-item:hover .hero-overlay{
-    transform: translateY(0%);
-  }
-  
-  .hero-list-item:focus .hero-overlay{
-    transform: translateY(0%);
-  }
-  
-  
-    .image-box{
-      overflow: hidden;
-      height: 294px;
-      position: relative;
-  }
-  
-  
-  .hero-overlay{
-    background: rgba(33, 150, 243, 0.90);
-     width: 370px;
-    height: 294px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  transform: translateY(+101%);
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 63px 24px;
-  transition-duration: 250ms;
-  transition-property: transform;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  
-  
-  .hero-overlay-text{
-    color: #FFF;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 28px;
-  letter-spacing: 0.54px;
-  }
-  
-  
-  .hero-list-item:hover,
-  .hero-list-item:focus{
-    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
-    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-   }
-  
-  
-   .portfolio-photo{
+  flex-wrap: wrap;
+  max-width: 1200px;
+  gap: 27px;
+
+}
+
+.hero-list-item { 
+  flex-basis: calc((100% - 60px) / 3);
+}
+
+.hero-list-item:hover .hero-overlay{
+  transform: translateY(0%);
+}
+
+.hero-list-item:focus .hero-overlay{
+  transform: translateY(0%);
+}
+
+
+  .image-box{
+    overflow: hidden;
+    height: 294px;
+    position: relative;
+}
+
+
+.hero-overlay{
+  background: rgba(33, 150, 243, 0.90);
+   width: 370px;
+  height: 294px;
+position: absolute;
+bottom: 0;
+left: 0;
+transform: translateY(+101%);
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 63px 24px;
+transition-duration: 250ms;
+transition-property: transform;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
+.hero-overlay-text{
+  color: #FFF;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px;
+letter-spacing: 0.54px;
+}
+
+
+.hero-list-item:hover,
+.hero-list-item:focus{
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+  0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+ }
+
+ .portfolio-photo{
   width: 100%;
   }
   

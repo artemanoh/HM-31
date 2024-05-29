@@ -444,8 +444,21 @@ header {
 .header-list {
   display: flex;
   align-items: center;
+  animation-name: header-animation;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
 }
 
+@keyframes header-animation {
+  0% {
+    transform: translate(0, -100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
 .header-contact-list {
   display: flex;
   gap: 50px;
@@ -510,8 +523,29 @@ header {
   position: absolute;
   bottom: -32px;
   right: 0;
+  animation-name: link-line-animation;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
+@keyframes link-line-animation {
+  0% {
+    transform: translate(0, -5px);
+  }
+  25% {
+    transform: translate(0, -2, 5%);
+  }
+  50% {
+    transform: translate(0, 0);
+  }
+  75% {
+    transform: translate(0, -2, 5%);
+  }
+  100% {
+    transform: translate(0, -5px);
+  }
+}
 .header-link:hover {
   color: var(--whathbtbg);
 }
@@ -689,11 +723,17 @@ header {
   position: fixed;
   top: 0;
   left: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
   opacity: 0;
   pointer-events: none;
+  visibility: hidden;
+}
+
+.is-hidden .modal-window {
+  transform: translate(-50%, 0);
 }
 
 .modal-title {
@@ -719,6 +759,7 @@ header {
   padding: 40px;
   width: 528px;
   height: 581px;
+  transition: visibility 1000ms cubic-bezier(0.4, 0, 0.2, 1), transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .no-scroll {
@@ -738,6 +779,7 @@ header {
   position: absolute;
   top: 8px;
   right: 8px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-button:hover,
@@ -771,6 +813,9 @@ header {
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   padding-left: 42px;
+  transition-duration: 250ms;
+  transition-property: border;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:hover,
@@ -809,6 +854,9 @@ header {
 
 .modal-comment:hover {
   border-color: var(--whathbtbg);
+  transition-duration: 250ms;
+  transition-property: border;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-coment::-moz-placeholder {
@@ -849,6 +897,9 @@ header {
   line-height: 1.71;
   letter-spacing: 0.42px;
   text-decoration-line: underline;
+  transition-duration: 250ms;
+  transition-property: text;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-link:hover {
@@ -939,4 +990,26 @@ header {
 
 .main-section-item:last-child::before {
   background-image: url(../images/astronaut.png);
+}
+
+.main-section-title {
+  width: 270px;
+  color: var(--feauturesmain);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  margin-top: 33px;
+}
+
+.main-section-text {
+  width: 270px;
+  height: 72px;
+  flex-shrink: 0;
+  color: var(--commandtext);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.42px;
 }/*# sourceMappingURL=main.css.map */
