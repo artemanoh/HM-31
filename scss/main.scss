@@ -1,3 +1,5 @@
+@import "./base/reset";
+@import "./base/common";
 @import "./sections/classes";
 @import "./sections/command";
 @import "./sections/customers";
@@ -5,8 +7,7 @@
 @import "./sections/header";
 @import "./sections/hero";
 @import "./sections/classes";
-@import "./base/common";
-@import "./base/reset";
 @import "./sections/backdrop";
 @import "./sections/details";
 @import "./sections/main-section";
+
