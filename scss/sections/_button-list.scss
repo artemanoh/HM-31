@@ -1,10 +1,8 @@
-.section-button {
+.button {
   padding: 94px 0;
 
-}
-  
 
-.button-list {  
+&__list {  
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -12,17 +10,14 @@
   margin-bottom: 50px;
 }
 
-
-.button-item {
+&__item {
   line-height: 1.6;
 display: flex;
 flex-direction: row;
 justify-content: center;
-
 }
 
-
-.portfolio-button {
+&__subitem {
   color: var(--feauturesmain);
   text-align: center;
   font-size: 16px;
@@ -37,13 +32,17 @@ justify-content: center;
   transition-duration: 250ms;
   transition-property: background-color,box-shadow,color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.portfolio-button:hover,
-.portfolio-button:focus {
+  
+&:hover,
+&:focus {
   color: var(--Whatdo);
   background-color: var(--whathbtbg);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25), 0 4px 4px 0 rgba(0, 0, 0, 0.25), 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 
 
   }
+
+}
+
+}
+

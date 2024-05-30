@@ -2,9 +2,9 @@
   font-weight: 700;
   line-height: 0.6;
   padding: 94px 0 94px;
-}
 
-.classes-title {
+
+&__title {
   color: var(--feauturesmain);
   text-align: center;
   font-size: 36px;
@@ -14,17 +14,19 @@
  margin-bottom: 50px;
 }
 
-.classes-list {
+
+&__list {
   display: flex;
   justify-content: space-between;
 }
 
-.classes-item {
+
+&__item {
   position:relative;
 }
 
 
-.classes-position {
+&__position {
 display: flex;
 position: absolute;
 z-index: 1;
@@ -42,7 +44,7 @@ transform: translateY(+101%);
 }
 
 
-.classes-text {
+&__text {
   color: var(--Whatdo);
 font-size: 14px;
 font-weight: 700;
@@ -50,17 +52,27 @@ letter-spacing: 0.42px;
 text-transform: uppercase;
 }
 
-.classes-link{
+
+&__link{
   overflow: hidden;
   height: 294px;
   position: relative;
   display: block;
+
+
+}
+  &__link:hover > &__position {
+    transform: translate(0%);
+  }
+  
+  &__link:focus > &__position {
+    transform: translate(0%);
+  }
 }
 
-.classes-link:hover .classes-position {
-  transform: translate(0%);
-}
 
-.classes-link:focus .classes-position {
-  transform: translate(0%);
-}
+
+
+
+
+
