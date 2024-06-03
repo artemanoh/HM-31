@@ -10,8 +10,8 @@
 }
 
 &__item {
-}
-  &__item::before {
+
+  &::before {
   content: "";
   display: block;
   background-color: var(--commandbg);
@@ -23,21 +23,22 @@
   border-radius: 4px;
   background-size: 70px;
   
-  &__item:first-child::before {
+  &:first-child::before {
   background-image: url(../images/antenna.png);
 }
 
-&__item:nth-child(2)::before {
+&:nth-child(2)::before {
   background-image: url(../images/clock.png);
 }
 
-&__item:nth-child(3)::before {
+&:nth-child(3)::before {
   background-image: url(../images/diagram.png);
 }
 
-&__item:last-child::before {
+&:last-child::before {
   background-image: url(../images/astronaut.png);
 }
+  }
 
 &__title {
   width: 270px;

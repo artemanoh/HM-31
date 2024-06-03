@@ -2,38 +2,36 @@
   font-weight: 700;
   padding-top: 94px;
   padding-bottom: 94px;
-  background-color: #F5F4FA
-}
+  background-color: #F5F4FA;
+  
+ &__title {
+    color: var(--feauturesmain);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1.08px;
+    margin-bottom: 50px;
+  }
 
-.command-title {
-  color: var(--feauturesmain);
-  text-align: center;
-  font-size: 36px;
-  font-weight: 700;
-  letter-spacing: 1.08px;
-  margin-bottom: 50px;
-}
-
-.command-list {
+&__list {
   font-weight: 500;
   display: flex;
   gap: 30px;
-
 }
 
 
-.command-item {
+&__item {
   background-color: var(--Whatdo);
 padding-bottom: 30px;
 box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
-.team-photo{
+&__photo{
   margin-bottom: 33px;
 }
 
-.command-icons{
+&__icons{
   fill: var(--iconcolor);
   transition-duration: 250ms;
 transition-property: fill;
@@ -41,21 +39,21 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
-.command-icons-list{
+&__icons-list{
   display: flex; 
   justify-content: center;
   align-items: center;
   gap: 10px;
 }
-.command-icons-link:hover > .command-icons {
+&__icons-link:hover > &__icons {
   fill: var(--commandbg);
 }
 
-.command-icons-item{
+&__icons-item{
 
 }
 
-.command-icons-link{
+&__icons-link{
     display: flex;
   justify-content: center;
   align-items: center;
@@ -67,15 +65,15 @@ transition-property: background-color;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.command-icons-link:hover,
-.command-icons-link:focus {
+&__icons-link:hover,
+&__icons-link:focus {
   
   background-color: var(--whathbtbg);
 }
   
   
   
-  .list-name {
+  &__name {
     font-size: 16px;
     color: #212121;
     font-weight: 500;
@@ -86,7 +84,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     justify-content: center;
   }
   
-  .list-text {
+  &__text {
     font-weight: 400;
     color: #757575;
     font-size: 16px;
@@ -96,3 +94,4 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     justify-content: center;
     margin-bottom: 16px;
   }
+}

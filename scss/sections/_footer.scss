@@ -1,11 +1,11 @@
-.footer-webstudio {
+.footer {
   font-weight: 400;
   background-color: var(--background);
   padding-top: 60px;
   padding-bottom: 60px;
-}
 
-.footer-box{
+
+&__box{
 display: flex;
 gap: 70px;
 }
@@ -15,18 +15,18 @@ section{
 }
 
 
-.footer-logo {
+&__logo {
   font-weight: 700;
   line-height: 0.8;
 }
 
 
-.footer-list {}
+&__list {}
 
-.footer-item {}
+&__item {}
 
 
-.first-footer-color-logo {
+&__first-color-logo {
   color: var(--whathbtbg);
   font-family: 'Raleway';
   font-size: 26px;
@@ -35,7 +35,7 @@ section{
 }
 
 
-.second-footer-color-logo {
+&__second-color-logo {
   color: var(--Whatdo);
   font-family: 'Raleway';
   font-size: 26px;
@@ -44,7 +44,7 @@ section{
 }
 
 
-.footer-address {
+&__address {
   color: var(--Whatdo);
   font-size: 14px;
   font-style: normal;
@@ -57,7 +57,7 @@ section{
 
 
 
-.contact-link {
+&__link {
   color: var(--commandtext);
   font-size: 14px;
   font-weight: 400;
@@ -67,16 +67,13 @@ section{
   display: block;
 }
 
-.footer-icons-box {
+&__icons-box {
   padding-top: 12px;
 }
 
-.footer-adress{
-  
-}
 
 
-.footer-icons-text {
+&__icons-text {
   color: var(--Whatdo);
   font-size: 14px;
   font-weight: 700;
@@ -86,48 +83,53 @@ section{
 }
 
 
-.footer-icons-list {
+&__icons-list {
   display: flex;
   gap: 10px;
   
 }
 
 
-.footer-icons-list-item {
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
-  transition-duration: 250ms;
-transition-property: background-color;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-icons-link{
+&__icons-list-item {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 44px;
   height: 44px;
 
+
+}
+
+&__icons-link:hover{
+  background-color: var(--whathbtbg);
+
+}
+&__icons-link{
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 
-.footer-icons {
+&__icons {
   fill: var(--Whatdo);
   width: 20px;
 height: 20px;
 }
 
-.footer-icons-list-item:hover,
-.footer-icons-list-item:focus{
-  background-color: var(--whathbtbg);
-}
 
-.footer-form {
+
+&__form {
   padding-top: 12px;
 }
 
 
-.footer-form-title {
+&__form-title {
   color: #FFF;
 font-size: 14px;
 font-style: normal;
@@ -139,13 +141,13 @@ margin-bottom: 20px;
 }
 
 
-.footer-form-container {
+&__form-container {
   display: flex;
   gap: 12px;
 }
 
 
-.footer-form-input {
+&__form-input {
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background: rgba(33, 150, 243, 0.01);
@@ -159,12 +161,12 @@ margin-bottom: 20px;
   letter-spacing: 0.48px;
 }
 
-.footer-form-input:hover,
-.footer-form-input:focus {
+&__form-input:hover,
+&__form-input:focus {
   border-color: var(--whathbtbg);
 }
 
-.footer-form-input::placeholder {
+&__form-input::placeholder {
   color: var(--commandtext);
   font-size: 16px;
   font-weight: 400;
@@ -173,7 +175,7 @@ margin-bottom: 20px;
 }
 
 
-.footer-form-button {
+&__form-button {
   color: #fff;
   font-size: 16px;
   font-weight: 700;
@@ -192,10 +194,11 @@ transition-property: background-color;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-form-button:hover,
-.footer-form-button:focus {
+&__form-button:hover,
+&__form-button:focus {
   background-color: #1069b1 ;
 }
-.footer-form-icon {
+&__form-icon {
   fill: #FFF;
+}
 }

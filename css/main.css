@@ -1,16 +1,26 @@
-h1, h2, h3, h4, h5, h6, p, button {
+h1, h2, h3, p {
   margin: 0;
   padding: 0;
 }
 
-ul {
-  margin: 0;
+ul,
+ol {
   padding: 0;
+  margin: 0;
   list-style: none;
 }
 
 a {
   text-decoration: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+img {
+  display: block;
 }
 
 .container {
@@ -105,8 +115,7 @@ ul {
   padding-bottom: 94px;
   background-color: #F5F4FA;
 }
-
-.command-title {
+.command__title {
   color: var(--feauturesmain);
   text-align: center;
   font-size: 36px;
@@ -114,42 +123,35 @@ ul {
   letter-spacing: 1.08px;
   margin-bottom: 50px;
 }
-
-.command-list {
+.command__list {
   font-weight: 500;
   display: flex;
   gap: 30px;
 }
-
-.command-item {
+.command__item {
   background-color: var(--Whatdo);
   padding-bottom: 30px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
-
-.team-photo {
+.command__photo {
   margin-bottom: 33px;
 }
-
-.command-icons {
+.command__icons {
   fill: var(--iconcolor);
   transition-duration: 250ms;
   transition-property: fill;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.command-icons-list {
+.command__icons-list {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
 }
-
-.command-icons-link:hover > .command-icons {
+.command__icons-link:hover > .command__icons {
   fill: var(--commandbg);
 }
-
-.command-icons-link {
+.command__icons-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -160,13 +162,10 @@ ul {
   transition-property: background-color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.command-icons-link:hover,
-.command-icons-link:focus {
+.command__icons-link:hover, .command__icons-link:focus {
   background-color: var(--whathbtbg);
 }
-
-.list-name {
+.command__name {
   font-size: 16px;
   color: #212121;
   font-weight: 500;
@@ -176,8 +175,7 @@ ul {
   display: flex;
   justify-content: center;
 }
-
-.list-text {
+.command__text {
   font-weight: 400;
   color: #757575;
   font-size: 16px;
@@ -208,7 +206,7 @@ ul {
   gap: 30px;
   padding-bottom: 94px;
 }
-.customers__list-item {
+.customers__command-item {
   padding: 16px 32px;
   border-radius: 4px;
   border: 1px solid #AFB1B8;
@@ -216,7 +214,7 @@ ul {
   transition-property: border;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.customers__list-item__list-item:hover {
+.customers__command-item:hover {
   border: 1px solid var(--whathbtbg);
 }
 .customers__icons {
@@ -227,48 +225,42 @@ ul {
   transition-property: fill;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.customers__list-item:hover > .customers__icons {
+.customers__command-item:hover > .customers__icons {
   fill: var(--whathbtbg);
 }
 
-.footer-webstudio {
+.footer {
   font-weight: 400;
   background-color: var(--background);
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
-.footer-box {
+.footer__box {
   display: flex;
   gap: 70px;
 }
-
-section {
+.footer section {
   padding-top: 15px;
 }
-
-.footer-logo {
+.footer__logo {
   font-weight: 700;
   line-height: 0.8;
 }
-
-.first-footer-color-logo {
+.footer__first-color-logo {
   color: var(--whathbtbg);
   font-family: "Raleway";
   font-size: 26px;
   font-weight: 500;
   letter-spacing: 0.78px;
 }
-
-.second-footer-color-logo {
+.footer__second-color-logo {
   color: var(--Whatdo);
   font-family: "Raleway";
   font-size: 26px;
   font-weight: 500;
   letter-spacing: 0.78px;
 }
-
-.footer-address {
+.footer__address {
   color: var(--Whatdo);
   font-size: 14px;
   font-style: normal;
@@ -278,8 +270,7 @@ section {
   margin-top: 20px;
   display: block;
 }
-
-.contact-link {
+.footer__link {
   color: var(--commandtext);
   font-size: 14px;
   font-weight: 400;
@@ -288,12 +279,10 @@ section {
   margin-top: 9px;
   display: block;
 }
-
-.footer-icons-box {
+.footer__icons-box {
   padding-top: 12px;
 }
-
-.footer-icons-text {
+.footer__icons-text {
   color: var(--Whatdo);
   font-size: 14px;
   font-weight: 700;
@@ -301,44 +290,39 @@ section {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-
-.footer-icons-list {
+.footer__icons-list {
   display: flex;
   gap: 10px;
 }
-
-.footer-icons-list-item {
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
-  transition-duration: 250ms;
-  transition-property: background-color;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-icons-link {
+.footer__icons-list-item {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 44px;
   height: 44px;
 }
-
-.footer-icons {
+.footer__icons-link:hover {
+  background-color: var(--whathbtbg);
+}
+.footer__icons-link {
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+.footer__icons {
   fill: var(--Whatdo);
   width: 20px;
   height: 20px;
 }
-
-.footer-icons-list-item:hover,
-.footer-icons-list-item:focus {
-  background-color: var(--whathbtbg);
-}
-
-.footer-form {
+.footer__form {
   padding-top: 12px;
 }
-
-.footer-form-title {
+.footer__form-title {
   color: #FFF;
   font-size: 14px;
   font-style: normal;
@@ -348,13 +332,11 @@ section {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-
-.footer-form-container {
+.footer__form-container {
   display: flex;
   gap: 12px;
 }
-
-.footer-form-input {
+.footer__form-input {
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background: rgba(33, 150, 243, 0.01);
@@ -367,29 +349,24 @@ section {
   line-height: 1.25;
   letter-spacing: 0.48px;
 }
-
-.footer-form-input:hover,
-.footer-form-input:focus {
+.footer__form-input:hover, .footer__form-input:focus {
   border-color: var(--whathbtbg);
 }
-
-.footer-form-input::-moz-placeholder {
+.footer__form-input::-moz-placeholder {
   color: var(--commandtext);
   font-size: 16px;
   font-weight: 400;
   line-height: 1.25;
   letter-spacing: 0.48px;
 }
-
-.footer-form-input::placeholder {
+.footer__form-input::placeholder {
   color: var(--commandtext);
   font-size: 16px;
   font-weight: 400;
   line-height: 1.25;
   letter-spacing: 0.48px;
 }
-
-.footer-form-button {
+.footer__form-button {
   color: #fff;
   font-size: 16px;
   font-weight: 700;
@@ -407,13 +384,10 @@ section {
   transition-property: background-color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.footer-form-button:hover,
-.footer-form-button:focus {
+.footer__form-button:hover, .footer__form-button:focus {
   background-color: #1069b1;
 }
-
-.footer-form-icon {
+.footer__form-icon {
   fill: #FFF;
 }
 
@@ -923,19 +897,19 @@ header {
   border-radius: 4px;
   background-size: 70px;
 }
-.main-section__item::before__item:first-child::before {
+.main-section__item::before:first-child::before {
   background-image: url(../images/antenna.png);
 }
-.main-section__item::before__item:nth-child(2)::before {
+.main-section__item::before:nth-child(2)::before {
   background-image: url(../images/clock.png);
 }
-.main-section__item::before__item:nth-child(3)::before {
+.main-section__item::before:nth-child(3)::before {
   background-image: url(../images/diagram.png);
 }
-.main-section__item::before__item:last-child::before {
+.main-section__item::before:last-child::before {
   background-image: url(../images/astronaut.png);
 }
-.main-section__item::before__title {
+.main-section__item__title {
   width: 270px;
   color: var(--feauturesmain);
   font-size: 14px;
@@ -945,7 +919,7 @@ header {
   margin-bottom: 10px;
   margin-top: 33px;
 }
-.main-section__item::before__text {
+.main-section__item__text {
   width: 270px;
   height: 72px;
   flex-shrink: 0;
