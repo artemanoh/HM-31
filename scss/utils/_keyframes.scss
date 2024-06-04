@@ -1,0 +1,33 @@
+@keyframes header-animation {
+    0% {
+        transform: translate(0, -100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes link-line-animation {
+    0% {
+        transform: translate(0, -5px);
+    }
+
+    25% {
+        transform: translate(0, -2, 5%);
+    }
+
+    50% {
+        transform: translate(0, 0);
+    }
+
+    75% {
+        transform: translate(0, -2, 5%);
+    }
+
+    100% {
+        transform: translate(0, -5px);
+    }
+}
