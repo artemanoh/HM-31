@@ -35,6 +35,9 @@
     text-transform: uppercase;
     width: 700px;
     margin-bottom: 45px;
+    animation-name: title-move;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
   }
   
   

@@ -16,6 +16,10 @@
 
     }
 
+&__link{
+  transition: box-shadow cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}    
+
 &__list-item {
   flex-basis: calc((100% - 60px) / 3);
 
