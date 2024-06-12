@@ -12,12 +12,12 @@
   letter-spacing: 1.08px;
   line-height: 1.33;
  margin-bottom: 50px;
+ @extend %title;
 }
 
 
 &__list {
-  display: flex;
-  justify-content: space-between;
+  @include flexbox($justify: space-between);
 }
 
 
@@ -27,11 +27,9 @@
 
 
 &__position {
-display: flex;
+@include flexbox();
 position: absolute;
 z-index: 1;
-justify-content: center;
-align-items: center;
 width: 370px;
 height: 70px;
 bottom: 0;

@@ -9,8 +9,7 @@
 }
 
 &__list {
-  display: flex;
-  flex-wrap: wrap;
+   @include flexbox($justify: flex-start, $align: flex-start);
   gap: 30px;
   max-width: 1205px;
   width: 100%;

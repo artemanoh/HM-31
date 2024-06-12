@@ -3,10 +3,9 @@
   padding-top: 94px;
 
 &__list {
-  display: flex;
   max-width: 270px;
-  justify-content: space-between;
   gap: 30px;
+  @include flexbox($justify: space-between, $align: flex-start);
 }
 
 &__item {
@@ -22,6 +21,7 @@
   background-position: center;
   border-radius: 4px;
   background-size: 70px;
+  @include flexbox()
   }
   &:first-child::before {
   background-image: url(../images/antenna.png);

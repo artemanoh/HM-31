@@ -11,12 +11,12 @@
   letter-spacing: 1.08px;
   padding-top: 94px;
   margin-bottom: 50px;
+  @extend %text;
   }
   
   
   &__list {
-   display: flex;
-  justify-content: center;
+  @include flexbox();
   gap: 30px;
   padding-bottom: 94px;
   }

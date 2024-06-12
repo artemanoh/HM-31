@@ -256,10 +256,11 @@ ul {
   padding-top: 94px;
 }
 .main-section__list {
-  display: flex;
   max-width: 270px;
-  justify-content: space-between;
   gap: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .main-section__item::before {
   content: "";
