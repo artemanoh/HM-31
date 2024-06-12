@@ -5,17 +5,12 @@
   background-color: #F5F4FA;
   
  &__title {
-    color: var(--feauturesmain);
-    text-align: center;
-    font-size: 36px;
-    font-weight: 700;
-    letter-spacing: 1.08px;
-    margin-bottom: 50px;
+  @extend %title;
   }
 
 &__list {
   font-weight: 500;
-  display: flex;
+  @include flexbox();
   gap: 30px;
 }
 
@@ -40,9 +35,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 
 &__icons-list{
-  display: flex; 
-  justify-content: center;
-  align-items: center;
+  @include flexbox();
   gap: 10px;
 }
 &__icons-link:hover > &__icons {
@@ -54,9 +47,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 &__icons-link{
-    display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flexbox();
 width: 44px;
 height: 44px;
 border-radius: 50%;
@@ -80,8 +71,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     letter-spacing: 0.48px;
     line-height: 1.3;
     margin-bottom: 15px;
-    display: flex;
-    justify-content: center;
+    @include flexbox();
   }
   
   &__text {
@@ -90,8 +80,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     font-size: 16px;
     letter-spacing: 0.48px;
     line-height: 1.3;
-    display: flex;
-    justify-content: center;
+    @include flexbox();
     margin-bottom: 16px;
   }
 }

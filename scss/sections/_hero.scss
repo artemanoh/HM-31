@@ -1,6 +1,5 @@
 .container-hero{
-  display: flex;
-  align-items: center;
+  @include flexbox();
   flex-direction: column;
   }
   
