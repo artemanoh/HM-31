@@ -4,12 +4,12 @@
 
 
   &__container {
-  @include flexbox();
+    @include flexbox();
   }
 
 
   &__first-logo {
-  @include logo();
+    @include logo();
   }
 
   &__second-logo {
@@ -70,7 +70,7 @@
       animation-timing-function: linear;
       animation-iteration-count: infinite;
 
-      
+
     }
   }
 
@@ -95,7 +95,7 @@
     margin-left: 93px;
   }
 
-  &__contacts-link:hover > &__contacts-icon {
+  &__contacts-link:hover>&__contacts-icon {
     fill: var(--whathbtbg);
   }
 
@@ -123,23 +123,23 @@
     transition-property: color;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover,
-  &:focus {
-    color: var(--whathbtbg);
+    &:hover,
+    &:focus {
+      color: var(--whathbtbg);
+    }
   }
 }
+
+
+.headers-link {
+  color: var(--commandtext);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 0.6;
+  letter-spacing: 0.28px;
 }
 
-
-  .headers-link {
-    color: var(--commandtext);
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 0.6;
-    letter-spacing: 0.28px;
-  }
-
-  .headers-link:hover,
-  .headers-link:focus {
-    color: var(--whathbtbg);
-  }
+.headers-link:hover,
+.headers-link:focus {
+  color: var(--whathbtbg);
+}

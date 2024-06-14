@@ -4,73 +4,67 @@
   padding: 94px 0 94px;
 
 
-&__title {
-  color: var(--feauturesmain);
-  text-align: center;
-  font-size: 36px;
-  font-weight: 700;
-  letter-spacing: 1.08px;
-  line-height: 1.33;
- margin-bottom: 50px;
- @extend %title;
-}
+  &__title {
+    color: var(--feauturesmain);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1.08px;
+    line-height: 1.33;
+    margin-bottom: 50px;
+    @extend %title;
+  }
 
 
-&__list {
-  @include flexbox($justify: space-between);
-}
+  &__list {
+    @include flexbox($justify: space-between);
+  }
 
 
-&__item {
-  position:relative;
-}
+  &__item {
+    position: relative;
+  }
 
 
-&__position {
-@include flexbox();
-position: absolute;
-z-index: 1;
-width: 370px;
-height: 70px;
-bottom: 0;
-background: rgba(47, 48, 58, 0.8);
-left: 0;
-transition-duration: 250ms;
-transition-property: transform;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-transform: translateY(+101%);
-}
+  &__position {
+    @include flexbox();
+    position: absolute;
+    z-index: 1;
+    width: 370px;
+    height: 70px;
+    bottom: 0;
+    background: rgba(47, 48, 58, 0.8);
+    left: 0;
+    transition-duration: 250ms;
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(+101%);
+  }
 
 
-&__text {
-  color: var(--Whatdo);
-font-size: 14px;
-font-weight: 700;
-letter-spacing: 0.42px;
-text-transform: uppercase;
-}
+  &__text {
+    color: var(--Whatdo);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+  }
 
 
-&__link{
-  overflow: hidden;
-  height: 294px;
-  position: relative;
-  display: block;
+  &__link {
+    overflow: hidden;
+    height: 294px;
+    position: relative;
+    display: block;
 
 
-}
-  &__link:hover > &__position {
+  }
+
+  &__link:hover>&__position {
     transform: translate(0%);
   }
-  
-  &__link:focus > &__position {
+
+  &__link:focus>&__position {
     transform: translate(0%);
   }
 }
-
-
-
-
-
-
-

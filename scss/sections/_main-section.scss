@@ -2,70 +2,65 @@
   font-weight: 700;
   padding-top: 94px;
 
-&__list {
-  max-width: 270px;
-  gap: 30px;
-  @include flexbox($justify: space-between, $align: flex-start);
-}
-
-&__item {
-
-  &::before {
-  content: "";
-  display: block;
-  background-color: var(--commandbg);
-  background-image: url(../images/antenna.png);
-  background-repeat: no-repeat;
-  width: 270px;
-  height: 120px;
-  background-position: center;
-  border-radius: 4px;
-  background-size: 70px;
-  @include flexbox()
-  }
-  &:first-child::before {
-  background-image: url(../images/antenna.png);
-}
-
-&:nth-child(2)::before {
-  background-image: url(../images/clock.png);
-}
-
-&:nth-child(3)::before {
-  background-image: url(../images/diagram.png);
-}
-
-&:last-child::before {
-  background-image: url(../images/astronaut.png);
-}
+  &__list {
+    max-width: 270px;
+    gap: 30px;
+    @include flexbox($justify: space-between, $align: flex-start);
   }
 
-&__title {
-  width: 270px;
-  color: var(--feauturesmain);
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 0.42px;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-  margin-top: 33px;
+  &__item {
+
+    &::before {
+      content: "";
+      display: block;
+      background-color: var(--commandbg);
+      background-image: url(../images/antenna.png);
+      background-repeat: no-repeat;
+      width: 270px;
+      height: 120px;
+      background-position: center;
+      border-radius: 4px;
+      background-size: 70px;
+      @include flexbox()
+    }
+
+    &:first-child::before {
+      background-image: url(../images/antenna.png);
+    }
+
+    &:nth-child(2)::before {
+      background-image: url(../images/clock.png);
+    }
+
+    &:nth-child(3)::before {
+      background-image: url(../images/diagram.png);
+    }
+
+    &:last-child::before {
+      background-image: url(../images/astronaut.png);
+    }
+  }
+
+  &__title {
+    width: 270px;
+    color: var(--feauturesmain);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 33px;
+  }
+
+  &__text {
+    width: 270px;
+    height: 72px;
+    flex-shrink: 0;
+    color: var(--commandtext);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.42px;
+
+  }
 }
-
-&__text {
-  width: 270px;
-  height: 72px;
-  flex-shrink: 0;
-  color: var(--commandtext);
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.71;
-  letter-spacing: 0.42px;
-
-}
-}
-
-
-
-
-
-

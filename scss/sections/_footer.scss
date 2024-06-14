@@ -5,199 +5,201 @@
   padding-bottom: 60px;
 
 
-&__box{
-@include flexbox();
-gap: 70px;
-}
+  &__box {
+    @include flexbox();
+    gap: 70px;
+  }
 
-section{
-  padding-top: 15px;
-}
-
-
-&__logo {
-  font-weight: 700;
-  line-height: 0.8;
-}
+  section {
+    padding-top: 15px;
+  }
 
 
-&__list {}
-
-&__item {}
-
-
-&__first-color-logo {
-  color: var(--whathbtbg);
-  font-family: 'Raleway';
-  font-size: 26px;
-  font-weight: 500;
-  letter-spacing: 0.78px;
-  @include logo();
-}
+  &__logo {
+    font-weight: 700;
+    line-height: 0.8;
+  }
 
 
-&__second-color-logo {
-  color: var(--Whatdo);
-  font-family: 'Raleway';
-  font-size: 26px;
-  font-weight: 500;
-  letter-spacing: 0.78px;
-  @include logo($logo-color: --)
-}
+  &__list {}
+
+  &__item {}
 
 
-&__address {
-  color: var(--Whatdo);
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.7;
-  letter-spacing: 0.42px;
-  margin-top: 20px;
-  display: block;
-}
+  &__first-color-logo {
+    color: var(--whathbtbg);
+    font-family: 'Raleway';
+    font-size: 26px;
+    font-weight: 500;
+    letter-spacing: 0.78px;
+    @include logo();
+  }
 
 
+  &__second-color-logo {
+    color: var(--Whatdo);
+    font-family: 'Raleway';
+    font-size: 26px;
+    font-weight: 500;
+    letter-spacing: 0.78px;
+    @include logo($logo-color: --)
+  }
 
-&__link {
-  color: var(--commandtext);
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.42px;
-  margin-top: 9px;
-  display: block;
-}
 
-&__icons-box {
-  padding-top: 12px;
-}
+  &__address {
+    color: var(--Whatdo);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.7;
+    letter-spacing: 0.42px;
+    margin-top: 20px;
+    display: block;
+  }
 
 
 
-&__icons-text {
-  color: var(--Whatdo);
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 0.42px;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
+  &__link {
+    color: var(--commandtext);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+    margin-top: 9px;
+    display: block;
+  }
 
-
-&__icons-list {
-  @include flexbox();
-  gap: 10px;
-  
-}
-
-
-&__icons-list-item {
-  @include flexbox();
-  width: 44px;
-  height: 44px;
-
-
-}
-
-&__icons-link:hover{
-  background-color: var(--whathbtbg);
-
-}
-&__icons-link{
-  width: 44px;
-  height: 44px;
-  background-color: rgba(255, 255, 255, .1);
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-}
-
-
-&__icons {
-  fill: var(--Whatdo);
-  width: 20px;
-height: 20px;
-}
+  &__icons-box {
+    padding-top: 12px;
+  }
 
 
 
-&__form {
-  padding-top: 12px;
-}
+  &__icons-text {
+    color: var(--Whatdo);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
 
 
-&__form-title {
-  color: #FFF;
-font-size: 14px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-letter-spacing: 0.42px;
-text-transform: uppercase;
-margin-bottom: 20px;
-}
+  &__icons-list {
+    @include flexbox();
+    gap: 10px;
+
+  }
 
 
-&__form-container {
-  @include flexbox();
-  gap: 12px;
-}
+  &__icons-list-item {
+    @include flexbox();
+    width: 44px;
+    height: 44px;
 
 
-&__form-input {
-  border-radius: 4px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  background: rgba(33, 150, 243, 0.01);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  padding: 15px 16px;
-  width: 358px;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.25;
-  letter-spacing: 0.48px;
-}
+  }
 
-&__form-input:hover,
-&__form-input:focus {
-  border-color: var(--whathbtbg);
-}
+  &__icons-link:hover {
+    background-color: var(--whathbtbg);
 
-&__form-input::placeholder {
-  color: var(--commandtext);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.25;
-  letter-spacing: 0.48px;
-}
+  }
+
+  &__icons-link {
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  }
 
 
-&__form-button {
-  color: #fff;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.87;
-  letter-spacing: 0.96px;
-  padding: 10px 28px;
-  background-color: var(--whathbtbg);
-  @include flexbox();
-  gap: 10px;
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  border: none;
-  transition-duration: 250ms;
-transition-property: background-color;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  &__icons {
+    fill: var(--Whatdo);
+    width: 20px;
+    height: 20px;
+  }
 
-&__form-button:hover,
-&__form-button:focus {
-  background-color: #1069b1 ;
-}
-&__form-icon {
-  fill: #FFF;
-}
+
+
+  &__form {
+    padding-top: 12px;
+  }
+
+
+  &__form-title {
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+
+  &__form-container {
+    @include flexbox();
+    gap: 12px;
+  }
+
+
+  &__form-input {
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(33, 150, 243, 0.01);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    padding: 15px 16px;
+    width: 358px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+    letter-spacing: 0.48px;
+  }
+
+  &__form-input:hover,
+  &__form-input:focus {
+    border-color: var(--whathbtbg);
+  }
+
+  &__form-input::placeholder {
+    color: var(--commandtext);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+    letter-spacing: 0.48px;
+  }
+
+
+  &__form-button {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.87;
+    letter-spacing: 0.96px;
+    padding: 10px 28px;
+    background-color: var(--whathbtbg);
+    @include flexbox();
+    gap: 10px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    border: none;
+    transition-duration: 250ms;
+    transition-property: background-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__form-button:hover,
+  &__form-button:focus {
+    background-color: #1069b1;
+  }
+
+  &__form-icon {
+    fill: #FFF;
+  }
 }

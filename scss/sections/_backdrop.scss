@@ -24,8 +24,7 @@
       transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  &__form {
-  }
+  &__form {}
 
   &__close-button {
     background-color: transparent;
@@ -41,8 +40,7 @@
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  &__close-icons {
-  }
+  &__close-icons {}
 
   &__title {
     color: var(--feauturesmain);
@@ -67,8 +65,7 @@
     margin-bottom: 20px;
   }
 
-  &__item {
-  }
+  &__item {}
 
   &__name {
     color: var(--headermail);
@@ -99,13 +96,14 @@
     }
   }
 
-  &__input:hover + &__icons {
+  &__input:hover+&__icons {
     fill: var(--whathbtbg);
   }
 
-  &__input:focus + &__icons {
+  &__input:focus+&__icons {
     fill: var(--whathbtbg);
   }
+
   &__icons {
     position: absolute;
     top: 29px;
@@ -132,6 +130,7 @@
       transition-property: border;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
+
     &::placeholder {
       color: rgba(117, 117, 117, 0.5);
       font-size: 12px;
@@ -195,6 +194,7 @@
   pointer-events: none;
   visibility: hidden;
 }
+
 .no-scroll {
   overflow: hidden;
 }

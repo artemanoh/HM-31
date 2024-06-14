@@ -3,67 +3,66 @@
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: #F5F4FA;
-  
- &__title {
-  @extend %title;
+
+  &__title {
+    @extend %title;
   }
 
-&__list {
-  font-weight: 500;
-  @include flexbox();
-  gap: 30px;
-}
+  &__list {
+    font-weight: 500;
+    @include flexbox();
+    gap: 30px;
+  }
 
 
-&__item {
-  background-color: var(--Whatdo);
-padding-bottom: 30px;
-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
-0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-}
+  &__item {
+    background-color: var(--Whatdo);
+    padding-bottom: 30px;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  }
 
-&__photo{
-  margin-bottom: 33px;
-}
+  &__photo {
+    margin-bottom: 33px;
+  }
 
-&__icons{
-  fill: var(--iconcolor);
-  transition-duration: 250ms;
-transition-property: fill;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  &__icons {
+    fill: var(--iconcolor);
+    transition-duration: 250ms;
+    transition-property: fill;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
 
-&__icons-list{
-  @include flexbox();
-  gap: 10px;
-}
-&__icons-link:hover > &__icons {
-  fill: var(--commandbg);
-}
+  &__icons-list {
+    @include flexbox();
+    gap: 10px;
+  }
 
-&__icons-item{
+  &__icons-link:hover>&__icons {
+    fill: var(--commandbg);
+  }
 
-}
+  &__icons-item {}
 
-&__icons-link{
-  @include flexbox();
-width: 44px;
-height: 44px;
-border-radius: 50%;
-transition-duration: 250ms;
-transition-property: background-color;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  &__icons-link {
+    @include flexbox();
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transition-duration: 250ms;
+    transition-property: background-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-&__icons-link:hover,
-&__icons-link:focus {
-  
-  background-color: var(--whathbtbg);
-}
-  
-  
-  
+  &__icons-link:hover,
+  &__icons-link:focus {
+
+    background-color: var(--whathbtbg);
+  }
+
+
+
   &__name {
     font-size: 16px;
     color: #212121;
@@ -73,7 +72,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     margin-bottom: 15px;
     @include flexbox();
   }
-  
+
   &__text {
     font-weight: 400;
     color: #757575;
