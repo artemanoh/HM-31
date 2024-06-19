@@ -5,7 +5,7 @@
   background-color: $commandbg;
 
   &__title {
-    @extend %title;
+    @extend %text;
   }
 
   &__list {

@@ -5,7 +5,7 @@
   &__list {
     max-width: 270px;
     gap: 30px;
-    @include flexbox($justify: space-between, $align: flex-start);
+    @include flexbox($justify: space-between, $align: flex-start, $wrap: none);
   }
 
   &__item {

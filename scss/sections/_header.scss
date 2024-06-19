@@ -9,16 +9,13 @@
 
 
   &__first-logo {
+    color: $whathbtbg;
     @include logo();
   }
 
   &__second-logo {
-    color: $feauturesmain;
-    font-family: "Raleway";
-    font-size: 26px;
-    font-weight: 500;
-    letter-spacing: 0.78px;
-    @include logo($logo-color: --feauturesmain);
+
+    @include logo($logo-color: $feauturesmain);
   }
 
 
