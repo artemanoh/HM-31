@@ -5,7 +5,7 @@
 
 
   &__title {
-    color: var(--feauturesmain);
+    color: $feauturesmain;
     text-align: center;
     font-size: 36px;
     font-weight: 700;
@@ -43,7 +43,7 @@
 
 
   &__text {
-    color: var(--Whatdo);
+    color: $Whatdo;
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 0.42px;

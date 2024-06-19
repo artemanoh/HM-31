@@ -1,12 +1,13 @@
 @mixin logo($logo-color: $accent) {
-    color: var(--whathbtbg);
+    color: $whathbtbg;
 font-family: "Raleway";
 font-size: 26px;
 font-weight: 500;
 letter-spacing: 0.78px;
 }
 
-@mixin button($align: center, $padding: 10px 32px) {    color: #fff;
+@mixin button($align: center, $padding: 10px 32px) {    
+    color: $Whatdo;
     text-align: $align;
     padding: $padding;
     font-size: 16px;
@@ -14,7 +15,7 @@ letter-spacing: 0.78px;
     line-height: 1.87;
     letter-spacing: 0.96px;
     border-radius: 4px;
-    background-color: var(--whathbtbg);
+    background-color: $whathbtbg;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
