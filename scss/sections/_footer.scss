@@ -8,6 +8,8 @@
   &__box {
     @include flexbox();
     gap: 70px;
+    animation-name: footer-animation;
+    animation-duration: 1s;
   }
 
   section {
@@ -42,7 +44,7 @@
     font-size: 26px;
     font-weight: 500;
     letter-spacing: 0.78px;
-    @include logo($logo-color: --)
+    @include logo($logo-color: $Whatdo);
   }
 
 
@@ -88,7 +90,6 @@
   &__icons-list {
     @include flexbox();
     gap: 10px;
-
   }
 
 

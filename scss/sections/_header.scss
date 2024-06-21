@@ -11,11 +11,16 @@
   &__first-logo {
     color: $whathbtbg;
     @include logo();
+    animation-name: header-animation;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
   }
 
   &__second-logo {
-
     @include logo($logo-color: $feauturesmain);
+    animation-name: header-animation;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
   }
 
 
@@ -83,6 +88,9 @@
     display: flex;
     gap: 50px;
     margin-left: auto;
+    animation-name: header-animation;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
   }
 
 

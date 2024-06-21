@@ -12,22 +12,151 @@
 
 @keyframes link-line-animation {
     0% {
-        transform: translate(0, -5px);
+        transform: translate(5px, -5px);
+    }
+
+    10% {
+        transform: translate(2, 5%, -2, 5%);
     }
 
     25% {
-        transform: translate(0, -2, 5%);
-    }
-
-    50% {
         transform: translate(0, 0);
     }
 
+    40% {
+        transform: translate(-2, 5%, -2, 5%);
+    }
+
+    50% {
+        transform: translate(-5px, -5px);
+    }
+
+    60% {
+        transform: translate(-2, 5%, -2, 5%);
+    }
+
     75% {
-        transform: translate(0, -2, 5%);
+        transform: translate(0, 0);
+    }
+
+    90% {
+        transform: translate(2, 5%, -2, 5%);
     }
 
     100% {
-        transform: translate(0, -5px);
+        transform: translate(5px, -5px);
+    }
+
+}
+
+@keyframes button-animation {
+    0% {
+        transform: translate(50px, 50px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+@keyframes title-animation {
+    0% {
+        transform: translate(-50px, -50px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+@keyframes list-animation {
+    0% {
+        transform: translateX(-1000px);
+    }
+
+    50% {
+        transform: translateX(500px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+@keyframes classes-animation {
+    0% {
+        transform: translate(500px, 100px);
+    }
+
+    50% {
+        transform: translateX(500px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+@keyframes command-animation {
+    0% {
+        transform: translate(500px, 100px);
+    }
+
+    50% {
+        transform: translate(-500px, 100px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+@keyframes customers-animation {
+    0% {
+        transform: translate(500px, 100px);
+    }
+
+    50% {
+        transform: translate(-500px, 100px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+@keyframes footer-animation {
+    0% {
+        transform: translateY(100px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+@keyframes button-list-animation {
+    0% {
+        transform: translate(100px,100px);
+    }
+    50% {
+        transform: translate(-100px,-100px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+@keyframes hero-list-animation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-150px);
+    }
+
+    100% {
+        transform: translate(0);
     }
 }

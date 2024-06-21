@@ -2,7 +2,7 @@
   background-color: $Whatdo;
 
   &__text {
-    color:$feauturesmain;
+    color: $feauturesmain;
     text-align: center;
     font-size: 36px;
     font-style: normal;
@@ -12,6 +12,9 @@
     padding-top: 94px;
     margin-bottom: 50px;
     @extend %text; 
+    animation-name: title-animation;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
   }
 
 
@@ -19,6 +22,8 @@
     @include flexbox();
     gap: 30px;
     padding-bottom: 94px;
+    animation-name: customers-animation;
+    animation-duration: 1s;
   }
 
 

@@ -33,7 +33,7 @@
     text-transform: uppercase;
     width: 700px;
     margin-bottom: 45px;
-    animation-name: title-move;
+    animation-name: title-animation;
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
   }
@@ -54,6 +54,9 @@
     transition-duration: 250ms;
     transition-property: background-color;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    animation-name: button-animation;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
 
     &:hover {
       background-color: $buttoncolor;

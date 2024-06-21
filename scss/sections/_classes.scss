@@ -13,11 +13,17 @@
     line-height: 1.33;
     margin-bottom: 50px;
     @extend %text;
+    animation-name: title-animation;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
   }
 
 
   &__list {
     @include flexbox($justify: space-between);
+    animation-name: classes-animation;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
   }
 
 

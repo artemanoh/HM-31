@@ -50,19 +50,121 @@ ul {
 }
 @keyframes link-line-animation {
   0% {
-    transform: translate(0, -5px);
+    transform: translate(5px, -5px);
+  }
+  10% {
+    transform: translate(2, 5%, -2, 5%);
   }
   25% {
-    transform: translate(0, -2, 5%);
-  }
-  50% {
     transform: translate(0, 0);
   }
+  40% {
+    transform: translate(-2, 5%, -2, 5%);
+  }
+  50% {
+    transform: translate(-5px, -5px);
+  }
+  60% {
+    transform: translate(-2, 5%, -2, 5%);
+  }
   75% {
-    transform: translate(0, -2, 5%);
+    transform: translate(0, 0);
+  }
+  90% {
+    transform: translate(2, 5%, -2, 5%);
   }
   100% {
-    transform: translate(0, -5px);
+    transform: translate(5px, -5px);
+  }
+}
+@keyframes button-animation {
+  0% {
+    transform: translate(50px, 50px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+@keyframes title-animation {
+  0% {
+    transform: translate(-50px, -50px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+@keyframes list-animation {
+  0% {
+    transform: translateX(-1000px);
+  }
+  50% {
+    transform: translateX(500px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+@keyframes classes-animation {
+  0% {
+    transform: translate(500px, 100px);
+  }
+  50% {
+    transform: translateX(500px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+@keyframes command-animation {
+  0% {
+    transform: translate(500px, 100px);
+  }
+  50% {
+    transform: translate(-500px, 100px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+@keyframes customers-animation {
+  0% {
+    transform: translate(500px, 100px);
+  }
+  50% {
+    transform: translate(-500px, 100px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+@keyframes footer-animation {
+  0% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+@keyframes button-list-animation {
+  0% {
+    transform: translate(100px, 100px);
+  }
+  50% {
+    transform: translate(-100px, -100px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+@keyframes hero-list-animation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-150px);
+  }
+  100% {
+    transform: translate(0);
   }
 }
 .customers__text, .command__title, .classes__title {
@@ -90,12 +192,18 @@ ul {
   font-size: 26px;
   font-weight: 500;
   letter-spacing: 0.78px;
+  animation-name: header-animation;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
 }
 .header__second-logo {
   font-family: "Raleway";
   font-size: 26px;
   font-weight: 500;
   letter-spacing: 0.78px;
+  animation-name: header-animation;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
 }
 .header__list {
   display: flex;
@@ -151,6 +259,9 @@ ul {
   display: flex;
   gap: 50px;
   margin-left: auto;
+  animation-name: header-animation;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
 }
 .header__contact-list-item {
   display: flex;
@@ -234,7 +345,7 @@ ul {
   text-transform: uppercase;
   width: 700px;
   margin-bottom: 45px;
-  animation-name: title-move;
+  animation-name: title-animation;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
 }
@@ -253,6 +364,9 @@ ul {
   transition-duration: 250ms;
   transition-property: background-color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  animation-name: button-animation;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
 }
 .hero__button:hover {
   background-color: #188CE8;
@@ -269,6 +383,8 @@ ul {
   align-items: flex-start;
   justify-content: space-between;
   flex-wrap: nowrap;
+  animation-name: list-animation;
+  animation-duration: 1s;
 }
 .main-section__item::before {
   content: "";
@@ -332,12 +448,18 @@ ul {
   letter-spacing: 1.08px;
   line-height: 1.33;
   margin-bottom: 50px;
+  animation-name: title-animation;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
 }
 .classes__list {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  animation-name: classes-animation;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
 }
 .classes__item {
   position: relative;
@@ -385,6 +507,11 @@ ul {
   padding-bottom: 94px;
   background-color: #f5f4fa;
 }
+.command__title {
+  animation-name: title-animation;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
 .command__list {
   font-weight: 500;
   display: flex;
@@ -392,6 +519,8 @@ ul {
   justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
+  animation-name: command-animation;
+  animation-duration: 1s;
 }
 .command__item {
   background-color: #fff;
@@ -470,6 +599,9 @@ ul {
   letter-spacing: 1.08px;
   padding-top: 94px;
   margin-bottom: 50px;
+  animation-name: title-animation;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
 }
 .customers__list {
   display: flex;
@@ -478,6 +610,8 @@ ul {
   flex-wrap: wrap;
   gap: 30px;
   padding-bottom: 94px;
+  animation-name: customers-animation;
+  animation-duration: 1s;
 }
 .customers__command-item {
   padding: 16px 32px;
@@ -514,6 +648,8 @@ ul {
   justify-content: center;
   flex-wrap: wrap;
   gap: 70px;
+  animation-name: footer-animation;
+  animation-duration: 1s;
 }
 .footer section {
   padding-top: 15px;

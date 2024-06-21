@@ -6,12 +6,17 @@
 
   &__title {
     @extend %text;
+    animation-name: title-animation;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
   }
 
   &__list {
     font-weight: 500;
     @include flexbox();
     gap: 30px;
+    animation-name: command-animation;
+    animation-duration: 1s;
   }
 
 

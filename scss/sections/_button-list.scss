@@ -6,6 +6,8 @@
     @include flexbox();
     gap: 8px;
     margin-bottom: 50px;
+    animation-name: button-list-animation;
+    animation-duration: 1s;
   }
 
   &__item {

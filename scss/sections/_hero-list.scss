@@ -13,7 +13,8 @@
     gap: 30px;
     max-width: 1205px;
     width: 100%;
-
+    animation-name: hero-list-animation;
+    animation-duration: 1s;
   }
 
   &__link {
