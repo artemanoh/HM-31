@@ -1,10 +1,22 @@
 .header {
-  padding: 24px 0;
+  padding: 10px 0;
   border-bottom: 1px solid $header-color;
+  
 
+  @media  screen and (min-width: 768px) {
+    padding: 21px 0;
+  }
+
+  @media  screen and (min-width: 1200px) {
+    padding: 24px 0;
+  }
 
   &__container {
-    @include flexbox();
+    @include flexbox($justify: flex-start);
+
+    @media  screen and (min-width: 768px) {
+      @include flexbox();
+    }
   }
 
 
@@ -25,11 +37,19 @@
 
 
   &__list {
-    @include flexbox();
+    display: none;
     animation-name: header-animation;
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
 
+    @media screen and (min-width: 768px) {
+      @include flexbox();
+      gap: 50px;
+  }
+
+  @media screen and (min-width: 1200px) {
+      margin-left: 93px;
+  }
 
 
   }
@@ -37,7 +57,7 @@
   &__list-item {
     @include flexbox();
     gap: 53px;
-    margin-left: 93px;
+    margin-left: 83px;
     line-height: 1.15;
   }
 
@@ -85,20 +105,59 @@
 
 
   &__contact-list {
-    display: flex;
-    gap: 50px;
+    display: none;
     margin-left: auto;
     animation-name: header-animation;
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
+  
+    @media screen and (min-width: 768px) {
+      @include flexbox($align: flex-start);
+      gap: 10px;
+      flex-direction: column;
+      margin-left: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+      @include flexbox();
+      flex-direction: row;
+      gap: 50px;
+      margin-left: auto;
+  }
   }
 
 
   &__contact-list-item {
-    display: flex;
-    gap: 50px;
-    margin-left: 93px;
+
+
+    @media screen and (min-width: 768px) {
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.28px;
+      @include flexbox();
+      gap: 10px;
   }
+
+  @media screen and (min-width: 1200px) {
+      font-size: 14px;
+  }
+  }
+
+  &__contact-list-item:first-child &__contacts-icon {
+
+    @media screen and (min-width: 1200px) {
+        width: 16px;
+        height: 12px;
+    }
+}
+
+&__contact-list-item:last-child &__contacts-icon {
+
+    @media screen and (min-width: 1200px) {
+        width: 10px;
+        height: 16px;
+    }
+}
 
   &__contacts-link:hover>&__contacts-icon {
     fill: $whathbtbg;

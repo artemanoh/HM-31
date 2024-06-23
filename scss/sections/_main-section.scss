@@ -1,16 +1,30 @@
 .main-section {
   font-weight: 700;
-  padding-top: 94px;
+  padding: 60px 0;
+
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0 47px;
+  }
 
   &__list {
-    max-width: 270px;
+ 
     gap: 30px;
-    @include flexbox($justify: space-between, $align: flex-start, $wrap: nowrap);
+    flex-wrap: wrap;
+    @include flexbox($align: flex-start);
     animation-name: list-animation;
     animation-duration: 1s;
   }
 
   &__item {
+    max-width: 450px;
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    } 
 
     &::before {
       content: "";
@@ -18,7 +32,7 @@
       background-color: $commandbg;
       background-image: url(../images/antenna.png);
       background-repeat: no-repeat;
-      width: 270px;
+      width: 100%;
       height: 120px;
       background-position: center;
       border-radius: 4px;
