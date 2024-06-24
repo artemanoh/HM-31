@@ -606,6 +606,11 @@ img {
   margin-top: 20px;
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .footer__address {
+    display: block;
+  }
+}
 .footer__link {
   color: #757575;
   font-size: 14px;

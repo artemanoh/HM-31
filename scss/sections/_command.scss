@@ -1,7 +1,6 @@
 .command {
   font-weight: 700;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 60px 0;
   background-color: $commandbg;
   overflow: hidden;
 
@@ -34,7 +33,7 @@
 
   &__item {
     background-color: $Whatdo;
-    padding-bottom: 30px;
+    padding-bottom: 24px;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
       0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   
@@ -48,7 +47,7 @@
     }
 
   &__photo {
-    margin-bottom: 33px;
+    margin-bottom: 29px;
   }
 
   &__icons {

@@ -76,6 +76,10 @@
     letter-spacing: 0.42px;
     margin-top: 20px;
     text-align: center;
+
+    @media screen and (min-width: 1200px) {
+      display: block;
+      }
   }
 
 

@@ -10,8 +10,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding: 118px 0;
 
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
@@ -25,14 +24,19 @@
     padding: 200px 0;
 }
 
-  &__title {
-    width: 322px;
-    color: $feauturesmain;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 2;
-    letter-spacing: 1.08px;
-
+    &__title {
+  
+      color: $feauturesmain;
+  
+      font-weight: 900;
+      font-size: 26px;
+      line-height: 1.62;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      text-align: center;
+      max-width: 360px;
+      line-height: 2;
+      letter-spacing: 1.08px;
     @media screen and (min-width: 1200px) {
       font-size: 44px;
       line-height: 1.36;
@@ -77,6 +81,11 @@
     animation-name: button-animation;
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
+
+    
+    @media screen and (min-width: 1200px) {
+      padding: 10px 32px;
+  }
 
     &:hover {
       background-color: $buttoncolor;
