@@ -14,7 +14,6 @@
     font-weight: 700;
     line-height: normal;
     letter-spacing: 1.08px;
-    padding-top: 94px;
     margin-bottom: 50px;
     @extend %text; 
     animation-name: title-animation;
@@ -33,7 +32,6 @@
     @include flexbox();
     gap: 30px;
     width: 100%;
-    padding-bottom: 94px;
     animation-name: customers-animation;
     animation-duration: 1s;
   }

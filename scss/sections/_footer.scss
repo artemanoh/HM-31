@@ -7,10 +7,19 @@
 
   &__box {
     @include flexbox();
-    gap: 70px;
+    gap: 60px;
     animation-name: footer-animation;
     animation-duration: 1s;
+  
+
+    @media screen and (min-width: 768px) {
+      gap: 60px 165px;
   }
+
+  @media screen and (min-width: 1200px) {
+      gap: 70px;
+  }
+}
 
   section {
     padding-top: 15px;
@@ -23,7 +32,17 @@
   }
 
 
-  &__list {}
+  &__list {
+    @include flexbox();
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 20px;
+
+    @media screen and (min-width: 1200px) {
+        align-items: flex-start;
+        gap: 9px;
+    }
+  }
 
   &__item {}
 
@@ -56,7 +75,7 @@
     line-height: 1.7;
     letter-spacing: 0.42px;
     margin-top: 20px;
-    display: block;
+    text-align: center;
   }
 
 
@@ -68,11 +87,16 @@
     line-height: 24px;
     letter-spacing: 0.42px;
     margin-top: 9px;
-    display: block;
+    text-align: center;
   }
 
   &__icons-box {
     padding-top: 12px;
+    text-align: center;
+
+    @media screen and (min-width: 1200px) {
+            text-align: left;
+        }
   }
 
 
@@ -126,8 +150,17 @@
 
 
 
-  &__form {
-    padding-top: 12px;
+    &__form {
+      padding-top: 12px;
+      width: 100%;
+  
+      @media screen and (min-width: 768px) {
+        max-width: 450px;
+      }
+  
+      @media screen and (min-width: 1200px) {
+        max-width: 570px;
+      }
   }
 
 
@@ -140,12 +173,24 @@
     letter-spacing: 0.42px;
     text-transform: uppercase;
     margin-bottom: 20px;
+    text-align: center;
+
+        @media screen and (min-width: 1200px) {
+            text-align: left;
+            }
   }
 
 
   &__form-container {
     @include flexbox();
     gap: 12px;
+    @media screen and (min-width: 768px) {
+      max-width: 450px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      max-width: 570px;
+    }
   }
 
 
@@ -155,12 +200,17 @@
     background: rgba(33, 150, 243, 0.01);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     padding: 15px 16px;
-    width: 358px;
+    width: 100%;
+    display: block;
     color: $Whatdo;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.25;
     letter-spacing: 0.48px;
+
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+      }
   }
 
   &__form-input:hover,
@@ -183,7 +233,7 @@
     font-weight: 700;
     line-height: 1.87;
     letter-spacing: 0.96px;
-    padding: 10px 28px;
+    padding: 10px 28px 10px 31px;
     background-color: $whathbtbg;
     @include flexbox();
     gap: 10px;
@@ -193,6 +243,10 @@
     transition-duration: 250ms;
     transition-property: background-color;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 1200px) {
+      padding: 10px 28px;
+      }
   }
 
   &__form-button:hover,

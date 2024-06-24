@@ -3,13 +3,25 @@
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: $commandbg;
+  overflow: hidden;
+
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+    padding: 94px 0;
+}
 
   &__title {
     @extend %text;
     animation-name: title-animation;
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 36px;
+      margin-bottom: 50px;
   }
+}
 
   &__list {
     font-weight: 500;
@@ -25,7 +37,15 @@
     padding-bottom: 30px;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
       0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-  }
+  
+      @media screen and (min-width: 768px) {
+        width: 354px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+        padding-bottom: 30px;
+    }
+    }
 
   &__photo {
     margin-bottom: 33px;
