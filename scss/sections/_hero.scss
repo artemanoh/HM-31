@@ -24,19 +24,21 @@
     padding: 200px 0;
 }
 
-    &__title {
-  
-      color: $feauturesmain;
-  
-      font-weight: 900;
-      font-size: 26px;
-      line-height: 1.62;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      text-align: center;
-      max-width: 360px;
-      line-height: 2;
-      letter-spacing: 1.08px;
+
+  &__titles {
+    font-weight: 900;
+    color: $Whatdo;
+    text-align: center;
+    font-size: 26px;
+    line-height: 1.62;
+    letter-spacing: 1.56px;
+    text-transform: uppercase;
+    text-align: center;
+    max-width: 360px;
+    animation-name: title-animation;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+
     @media screen and (min-width: 1200px) {
       font-size: 44px;
       line-height: 1.36;
@@ -44,22 +46,6 @@
       max-width: 696px;
       margin-bottom: 40px;
   }
-
-  }
-
-  &__titles {
-    font-weight: 900;
-    color: $Whatdo;
-    text-align: center;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 2.64px;
-    text-transform: uppercase;
-    width: 700px;
-    margin-bottom: 45px;
-    animation-name: title-animation;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
   }
 
 

@@ -17,6 +17,7 @@
 
   &__item {
     max-width: 450px;
+    width: 100%;
 
     @media screen and (min-width: 768px) {
       width: 354px;
@@ -69,7 +70,7 @@
   }
 
   &__text {
-    width: 270px;
+    width: 450px;
     height: 72px;
     flex-shrink: 0;
     color: $commandtext;
@@ -78,5 +79,14 @@
     line-height: 1.71;
     letter-spacing: 0.42px;
 
+    @media screen and (min-width:758px) {
+      width: 354px;
+      height: 48px;
+    }
+    @media screen and (min-width:1200px) {
+      width: 270px;
+      height: 72px;
+    }
+    
   }
 }

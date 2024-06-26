@@ -566,7 +566,6 @@ img {
   flex-wrap: wrap;
   flex-direction: column;
   gap: 8px;
-  margin-top: 20px;
 }
 @media screen and (min-width: 1200px) {
   .footer__list {

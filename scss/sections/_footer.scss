@@ -36,7 +36,6 @@
     @include flexbox();
     flex-direction: column;
     gap: 8px;
-    margin-top: 20px;
 
     @media screen and (min-width: 1200px) {
         align-items: flex-start;
