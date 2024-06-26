@@ -394,13 +394,37 @@ img {
 }
 
 .heros {
-  padding: 25px 0 94px;
+  padding: 20px 0 60px;
+}
+@media screen and (min-width: 768px) {
+  .heros {
+    padding: 15px 0 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .heros {
+    padding: 25px 0 94px;
+  }
 }
 .heros__container {
-  max-width: 1205px;
-  width: 100%;
   padding: 0 15px;
   margin: 0 auto;
+  outline: red dashed;
+}
+@media screen and (min-width: 480px) {
+  .heros__container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .heros__container {
+    width: 804px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .heros__container {
+    width: 1230px;
+  }
 }
 .heros__list {
   display: flex;
@@ -408,7 +432,7 @@ img {
   justify-content: flex-start;
   flex-wrap: wrap;
   gap: 30px;
-  max-width: 1205px;
+  max-width: 1230px;
   width: 100%;
   animation-name: hero-list-animation;
   animation-duration: 1s;
@@ -418,7 +442,17 @@ img {
   transition: box-shadow cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 .heros__list-item {
-  flex-basis: calc((100% - 60px) / 3);
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .heros__list-item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .heros__list-item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }
 .heros__list-item:hover, .heros__list-item:focus {
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
@@ -436,7 +470,7 @@ img {
 }
 .heros__overlay {
   background: rgba(33, 150, 243, 0.9);
-  width: 375px;
+  width: 450px;
   height: 294px;
   position: absolute;
   bottom: 0;
@@ -450,6 +484,16 @@ img {
   transition-duration: 250ms;
   transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .heros__overlay {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .heros__overlay {
+    width: 375px;
+  }
 }
 .heros__overlay-text {
   color: #fff;
@@ -487,17 +531,38 @@ img {
 }
 
 .button {
-  padding: 94px 0 25px;
+  padding: 60px 0 20px;
+}
+@media screen and (min-width: 768px) {
+  .button {
+    padding: 60px 0 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .button {
+    padding: 94px 0 25px;
+  }
 }
 .button__list {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 50px;
+  max-width: 326px;
+  gap: 15px 8px;
   animation-name: button-list-animation;
   animation-duration: 1s;
+}
+@media screen and (min-width: 768px) {
+  .button__list {
+    gap: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 575px;
+    margin: 0 auto;
+  }
 }
 .button__item {
   line-height: 1.6;
