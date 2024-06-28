@@ -192,6 +192,23 @@
       color: $whathbtbg;
     }
   }
+
+  &__menu {
+    background-color: transparent;
+    margin-left: auto;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+  }
+  &__icon-menu {
+    fill: $feauturesmain;
+
+    &:hover,
+    &:focus {
+        fill: $whathbtbg;
+    }
+  }
 }
 
 
