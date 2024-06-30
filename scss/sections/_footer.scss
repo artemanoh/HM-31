@@ -7,6 +7,7 @@
 
   &__box {
     @include flexbox();
+    align-items: flex-start;
     gap: 60px;
     animation-name: footer-animation;
     animation-duration: 1s;
@@ -81,6 +82,10 @@
       }
   }
 
+  &__logo-box{
+text-align: center;
+  }
+
 
 
   &__link {
@@ -111,6 +116,7 @@
     letter-spacing: 0.42px;
     text-transform: uppercase;
     margin-bottom: 20px;
+    text-align: center;
   }
 
 

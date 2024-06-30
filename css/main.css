@@ -195,10 +195,10 @@ ul {
 .customers__text, .command__title, .classes__title {
   color: #212121;
   text-align: center;
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 700;
-  letter-spacing: 1.08px;
-  margin-bottom: 50px;
+  letter-spacing: 0.84px;
+  margin-bottom: 30px;
 }
 
 .header {
@@ -464,6 +464,7 @@ ul {
   animation-name: title-animation;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 1200px) {
   .hero__titles {
@@ -571,11 +572,9 @@ ul {
   letter-spacing: 0.42px;
   text-transform: uppercase;
   margin-bottom: 10px;
-  margin-top: 33px;
+  margin-top: 30px;
 }
 .main-section__text {
-  width: 450px;
-  height: 72px;
   flex-shrink: 0;
   color: #757575;
   font-size: 14px;
@@ -608,16 +607,15 @@ ul {
   }
 }
 .classes__title {
-  color: #212121;
-  text-align: center;
-  font-size: 36px;
-  font-weight: 700;
-  letter-spacing: 1.08px;
-  line-height: 1.33;
-  margin-bottom: 50px;
   animation-name: title-animation;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
+}
+@media screen and (min-width: 1200px) {
+  .classes__title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 .classes__list {
   display: flex;
@@ -792,14 +790,6 @@ ul {
   }
 }
 .customers__text {
-  color: #212121;
-  text-align: center;
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.84px;
-  margin-bottom: 30px;
   animation-name: title-animation;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
@@ -870,6 +860,7 @@ ul {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  align-items: flex-start;
   gap: 60px;
   animation-name: footer-animation;
   animation-duration: 1s;
@@ -942,6 +933,9 @@ ul {
     display: block;
   }
 }
+.footer__logo-box {
+  text-align: center;
+}
 .footer__link {
   color: #757575;
   font-size: 14px;
@@ -967,6 +961,7 @@ ul {
   letter-spacing: 0.42px;
   text-transform: uppercase;
   margin-bottom: 20px;
+  text-align: center;
 }
 .footer__icons-list {
   display: flex;

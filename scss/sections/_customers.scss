@@ -7,14 +7,6 @@
   }
 
   &__text {
-    color: $feauturesmain;
-    text-align: center;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.84px;
-    margin-bottom: 30px;
     @extend %text; 
     animation-name: title-animation;
     animation-duration: 1s;
