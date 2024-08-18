@@ -28,7 +28,7 @@ img {
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  outline: red dashed;
+  outline: red dashed hidden;
 }
 @media screen and (min-width: 480px) {
   .container {
